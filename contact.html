@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Kip Smart Living Enterprise — reach out with questions, product suggestions, partnership inquiries, or just to say hello.">
+  <title>Contact Us — Kip Smart Living Enterprise</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <style>
+    .contact-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid rgba(0,0,0,0.04);
+    }
+    .form-group {
+      margin-bottom: 22px;
+    }
+    .form-label {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: 8px;
+    }
+    .form-label span { color: #EF4444; margin-left: 2px; }
+    .form-input, .form-select, .form-textarea {
+      width: 100%;
+      padding: 13px 16px;
+      border: 1.5px solid rgba(0,0,0,0.1);
+      border-radius: var(--radius-sm);
+      font-family: var(--font-body);
+      font-size: 0.92rem;
+      color: var(--text);
+      background: #FAFBFC;
+      outline: none;
+      transition: var(--transition);
+    }
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-color: var(--blue);
+      background: white;
+      box-shadow: 0 0 0 3px rgba(47,128,237,0.1);
+    }
+    .form-textarea {
+      resize: vertical;
+      min-height: 140px;
+      line-height: 1.7;
+    }
+    .form-select { cursor: pointer; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
+
+    .info-card {
+      background: white;
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(0,0,0,0.04);
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      transition: var(--transition);
+    }
+    .info-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+    .info-icon {
+      width: 52px; height: 52px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      flex-shrink: 0;
+    }
+    .info-card-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 4px;
+    }
+    .info-card-text {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .info-card-link {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--blue);
+      margin-top: 6px;
+      display: inline-block;
+      transition: color 0.2s;
+    }
+    .info-card-link:hover { color: #1a6dd8; }
+
+    .faq-item {
+      background: white;
+      border-radius: var(--radius);
+      border: 1px solid rgba(0,0,0,0.06);
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+    .faq-q {
+      padding: 20px 24px;
+      font-weight: 600;
+      color: var(--dark);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.95rem;
+      transition: background 0.2s;
+      user-select: none;
+    }
+    .faq-q:hover { background: #F8FAFC; }
+    .faq-q .arrow {
+      font-size: 0.8rem;
+      transition: transform 0.3s;
+      color: var(--text-muted);
+    }
+    .faq-item.open .faq-q .arrow { transform: rotate(180deg); }
+    .faq-a {
+      padding: 0 24px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.3s ease;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+    .faq-item.open .faq-a {
+      max-height: 200px;
+      padding: 0 24px 20px;
+    }
+
+    /* Success state */
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .form-success.show { display: block; }
+    .success-icon {
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #22C55E, #16A34A);
+      margin: 0 auto 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+    }
+  </style>
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://mackaysscott.github.io/kip-smart-living/contact.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mackaysscott.github.io/kip-smart-living/contact.html">
+  <meta property="og:title" content="Contact Us — Kip Smart Living Enterprise">
+  <meta property="og:description" content="Get in touch with Kip Smart Living. Questions, partnerships, product suggestions — we reply within 24 hours.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80">
+  <meta property="og:site_name" content="Kip Smart Living Enterprise">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact Us — Kip Smart Living Enterprise">
+  <meta name="twitter:description" content="Get in touch with Kip Smart Living. Questions, partnerships, product suggestions — we reply within 24 hours.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Us — Kip Smart Living Enterprise",
+    "description": "Get in touch with Kip Smart Living. Questions, partnerships, product suggestions — we reply within 24 hours.",
+    "url": "https://mackaysscott.github.io/kip-smart-living/contact.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Kip Smart Living Enterprise",
+      "url": "https://mackaysscott.github.io/kip-smart-living",
+      "email": "kipenterpise@gmail.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mackaysscott.github.io/kip-smart-living/images/logo.png"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar scrolled" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">⚡</div>
+      <div class="logo-text">Kip Smart Living<span>Enterprise</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="kitchen.html">Kitchen</a></li>
+      <li><a href="smart-home.html">Smart Home</a></li>
+      <li><a href="deals.html">Deals 🔥</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="contact.html" class="btn btn-primary" style="padding:10px 20px;font-size:0.85rem">Contact Us</a>
+    </div>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="index.html">Home</a>
+  <a href="kitchen.html">Kitchen</a>
+  <a href="smart-home.html">Smart Home</a>
+  <a href="deals.html">Deals 🔥</a>
+  <a href="blog.html">Blog</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="container">
+    <div class="page-hero-inner">
+      <h1 class="page-hero-title">📬 Get In Touch</h1>
+      <p class="page-hero-sub">We read and respond to every message. Usually within 24 hours.</p>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT INFO CARDS -->
+<section style="padding:70px 0 0">
+  <div class="container">
+    <div class="grid-3" style="max-width:900px;margin:0 auto">
+
+      <div class="info-card fade-in">
+        <div class="info-icon" style="background:rgba(47,128,237,0.1)">📧</div>
+        <div>
+          <div class="info-card-title">Email Us</div>
+          <div class="info-card-text">For all general inquiries, questions, or feedback.</div>
+          <a href="/cdn-cgi/l/email-protection#5f34362f3a312b3a2d2f362c3a1f38323e3633713c3032" class="info-card-link"><span class="__cf_email__" data-cfemail="5a31332a3f342e3f282a33293f1a3d373b333674393537">[email&#160;protected]</span></a>
+        </div>
+      </div>
+
+      <div class="info-card fade-in fade-in-delay-1">
+        <div class="info-icon" style="background:rgba(255,122,24,0.1)">🤝</div>
+        <div>
+          <div class="info-card-title">Partnerships</div>
+          <div class="info-card-text">Brand collaborations, sponsored content, and affiliate partnerships.</div>
+          <a href="/cdn-cgi/l/email-protection#e58e8c95808b918097958c9680a58288848c89cb868a88da9690878f808691d8b58497918b8097968d8c95c5ac8b94908c979c" class="info-card-link">Send a proposal →</a>
+        </div>
+      </div>
+
+      <div class="info-card fade-in fade-in-delay-2">
+        <div class="info-icon" style="background:rgba(0,194,168,0.1)">⏱️</div>
+        <div>
+          <div class="info-card-title">Response Time</div>
+          <div class="info-card-text">We typically respond within 24 hours on business days.</div>
+          <span class="info-card-link" style="cursor:default;color:var(--teal)">Mon – Fri, 9am – 6pm</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM + SIDEBAR -->
+<section class="section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:48px;max-width:1100px;margin:0 auto;align-items:start">
+
+      <!-- FORM -->
+      <div class="fade-in">
+        <div class="section-label">Send a Message</div>
+        <h2 class="section-title" style="margin-bottom:8px">We'd Love to Hear From You</h2>
+        <p style="color:var(--text-muted);margin-bottom:36px">Fill in the form and we'll get back to you at <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="abc0c2dbcec5dfced9dbc2d8ceebccc6cac2c785c8c4c6">[email&#160;protected]</a></strong> as soon as possible.</p>
+
+        <div class="contact-card">
+          <!-- ✅ GOOGLE FORMS EMBED -->
+          <!-- 
+            HOW TO CONNECT YOUR GOOGLE FORM:
+            1. Go to forms.google.com and create your form
+            2. Click Send → Embed (<>) → Copy the iframe src URL
+            3. Replace the src below with YOUR Google Form URL
+            4. Change ?embedded=true to keep it embedded
+          -->
+
+          <div style="margin-bottom:16px;padding:14px 18px;background:rgba(47,128,237,0.06);border:1.5px solid rgba(47,128,237,0.15);border-radius:10px;font-size:0.85rem;color:var(--dark2)">
+            💡 <strong>Powered by Google Forms</strong> — Your response goes directly to our Google Sheet and sends a notification to <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c6adafb6a3a8b2a3b4b6afb5a386a1aba7afaae8a5a9ab">[email&#160;protected]</a></strong>
+          </div>
+
+          <iframe
+            id="googleFormIframe"
+            src="PASTE_YOUR_GOOGLE_FORM_EMBED_URL_HERE"
+            width="100%"
+            height="900"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            style="border-radius:12px;border:1.5px solid rgba(0,0,0,0.06)"
+          >
+            Loading form...
+          </iframe>
+
+          <!-- Fallback if iframe not yet configured -->
+          <div id="formFallback" style="display:none;text-align:center;padding:40px 20px">
+            <div style="font-size:2.5rem;margin-bottom:16px">📝</div>
+            <h3 style="color:var(--dark);margin-bottom:10px">Google Form Not Set Up Yet</h3>
+            <p style="color:var(--text-muted);margin-bottom:20px;font-size:0.9rem">Follow the setup guide below to connect your Google Form. In the meantime, email us directly:</p>
+            <a href="/cdn-cgi/l/email-protection#eb80829b8e859f8e999b82988eab8c868a8287c5888486" class="btn btn-primary">📧 Email Us Directly</a>
+          </div>
+
+          <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+            // Show fallback if iframe src is placeholder
+            window.addEventListener('load', function() {
+              const iframe = document.getElementById('googleFormIframe');
+              if (iframe && iframe.src.includes('PASTE_YOUR')) {
+                iframe.style.display = 'none';
+                document.getElementById('formFallback').style.display = 'block';
+              }
+            });
+          </script>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div style="display:flex;flex-direction:column;gap:24px" class="fade-in fade-in-delay-1">
+
+        <!-- Direct Email CTA -->
+        <div style="background:linear-gradient(135deg,var(--dark),var(--dark2));border-radius:var(--radius-lg);padding:32px;color:white">
+          <div style="font-size:2rem;margin-bottom:16px">✉️</div>
+          <h3 style="font-size:1.05rem;font-weight:700;margin-bottom:10px">Prefer Direct Email?</h3>
+          <p style="font-size:0.85rem;color:rgba(255,255,255,0.6);line-height:1.7;margin-bottom:20px">
+            Skip the form and email us directly. We check our inbox every day and love hearing from readers.
+          </p>
+          <a href="/cdn-cgi/l/email-protection#bdd6d4cdd8d3c9d8cfcdd4ced8fddad0dcd4d193ded2d0" class="btn btn-primary" style="width:100%;justify-content:center">
+            📧 <span class="__cf_email__" data-cfemail="23484a53464d574651534a504663444e424a4f0d404c4e">[email&#160;protected]</span>
+          </a>
+        </div>
+
+        <!-- Social Links -->
+        <div style="background:white;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm);border:1px solid rgba(0,0,0,0.04)">
+          <h3 style="font-size:0.9rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-muted);margin-bottom:18px">Follow Us</h3>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <a href="#" style="display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:10px;border:1.5px solid rgba(0,0,0,0.08);transition:var(--transition);text-decoration:none;color:var(--text)"
+               onmouseover="this.style.borderColor='var(--blue)';this.style.background='rgba(47,128,237,0.04)'"
+               onmouseout="this.style.borderColor='rgba(0,0,0,0.08)';this.style.background='transparent'">
+              <span style="font-size:1.2rem">📘</span>
+              <div>
+                <div style="font-size:0.85rem;font-weight:600">Facebook</div>
+                <div style="font-size:0.75rem;color:var(--text-muted)">@KipSmartLiving</div>
+              </div>
+            </a>
+            <a href="#" style="display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:10px;border:1.5px solid rgba(0,0,0,0.08);transition:var(--transition);text-decoration:none;color:var(--text)"
+               onmouseover="this.style.borderColor='var(--orange)';this.style.background='rgba(255,122,24,0.04)'"
+               onmouseout="this.style.borderColor='rgba(0,0,0,0.08)';this.style.background='transparent'">
+              <span style="font-size:1.2rem">📸</span>
+              <div>
+                <div style="font-size:0.85rem;font-weight:600">Instagram</div>
+                <div style="font-size:0.75rem;color:var(--text-muted)">@KipSmartLiving</div>
+              </div>
+            </a>
+            <a href="#" style="display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:10px;border:1.5px solid rgba(0,0,0,0.08);transition:var(--transition);text-decoration:none;color:var(--text)"
+               onmouseover="this.style.borderColor='var(--teal)';this.style.background='rgba(0,194,168,0.04)'"
+               onmouseout="this.style.borderColor='rgba(0,0,0,0.08)';this.style.background='transparent'">
+              <span style="font-size:1.2rem">▶️</span>
+              <div>
+                <div style="font-size:0.85rem;font-weight:600">YouTube</div>
+                <div style="font-size:0.75rem;color:var(--text-muted)">Kip Smart Living</div>
+              </div>
+            </a>
+            <a href="#" style="display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:10px;border:1.5px solid rgba(0,0,0,0.08);transition:var(--transition);text-decoration:none;color:var(--text)"
+               onmouseover="this.style.borderColor='#E60023';this.style.background='rgba(230,0,35,0.04)'"
+               onmouseout="this.style.borderColor='rgba(0,0,0,0.08)';this.style.background='transparent'">
+              <span style="font-size:1.2rem">📌</span>
+              <div>
+                <div style="font-size:0.85rem;font-weight:600">Pinterest</div>
+                <div style="font-size:0.75rem;color:var(--text-muted)">@KipSmartLiving</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Response Guarantee -->
+        <div style="background:rgba(47,128,237,0.06);border:1.5px solid rgba(47,128,237,0.15);border-radius:var(--radius);padding:24px">
+          <div style="font-size:1.4rem;margin-bottom:10px">🕐</div>
+          <h3 style="font-size:0.95rem;font-weight:700;color:var(--dark);margin-bottom:8px">Our Response Promise</h3>
+          <p style="font-size:0.83rem;color:var(--text-muted);line-height:1.7">We respond to every single message within <strong style="color:var(--blue)">24 hours</strong> on business days. No auto-replies, no ignoring — just real answers from our team.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-alt">
+  <div class="container">
+    <div style="max-width:760px;margin:0 auto">
+      <div class="section-header centered">
+        <div class="section-label">Quick Answers</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          How do I know if a product is still available on Amazon?
+          <span class="arrow">▼</span>
+        </div>
+        <div class="faq-a">Click any "View on Amazon" button — it will take you directly to the live Amazon listing where you can see the current price, availability, and stock status in real time.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Do you accept product submissions or review requests?
+          <span class="arrow">▼</span>
+        </div>
+        <div class="faq-a">Yes! If you have a product you'd like us to feature or review, email us at <a href="/cdn-cgi/l/email-protection#2f44465f4a415b4a5d5f465c4a6f48424e4643014c4042" style="color:var(--blue)"><span class="__cf_email__" data-cfemail="53383a23363d273621233a203613343e323a3f7d303c3e">[email&#160;protected]</span></a> with the subject line "Product Review Request" and we'll take a look.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Do you offer sponsored posts or paid placements?
+          <span class="arrow">▼</span>
+        </div>
+        <div class="faq-a">We do work with select brands on sponsored content, but we always clearly disclose paid partnerships and only feature products we genuinely believe are worth recommending to our audience.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Can I suggest a product for you to review?
+          <span class="arrow">▼</span>
+        </div>
+        <div class="faq-a">Absolutely! We love reader suggestions. Use the contact form above or email us directly at <a href="/cdn-cgi/l/email-protection#462d2f362328322334362f352306212b272f2a6825292b" style="color:var(--blue)"><span class="__cf_email__" data-cfemail="42292b32272c362730322b312702252f232b2e6c212d2f">[email&#160;protected]</span></a> — many of our best reviews come from reader recommendations.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          How does the Amazon affiliate program work?
+          <span class="arrow">▼</span>
+        </div>
+        <div class="faq-a">When you click our Amazon links and make a purchase, we earn a small commission at no extra cost to you. The price you pay on Amazon is exactly the same. This commission helps us maintain the site and continue producing free content.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          I found a broken link or incorrect price — how do I report it?
+          <span class="arrow">▼</span>
+        </div>
+        <div class="faq-a">Thank you for helping us improve! Use the contact form above and select "Website Issue / Bug Report" — we'll fix it as quickly as possible and we genuinely appreciate the heads up.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-icon">⚡</div>
+          <div class="logo-text">Kip Smart Living<span>Enterprise</span></div>
+        </a>
+        <p class="footer-tagline">Smarter Kitchen. Smarter Home. Better Living.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn">📘</a><a href="#" class="social-btn">📸</a>
+          <a href="#" class="social-btn">📌</a><a href="#" class="social-btn">▶️</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Shop</div>
+        <ul class="footer-links">
+          <li><a href="kitchen.html">Kitchen Gadgets</a></li>
+          <li><a href="smart-home.html">Smart Home</a></li>
+          <li><a href="deals.html">Today's Deals</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Legal</div>
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="privacy.html#affiliate">Affiliate Disclosure</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-affiliate-notice"><strong style="color:rgba(255,255,255,0.6)">Affiliate Disclosure:</strong> We earn from qualifying Amazon purchases at no extra cost to you.</p>
+      <p style="color:rgba(255,255,255,0.3)">© 2025 Kip Smart Living Enterprise</p>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop">↑</button>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="products.js"></script>
+<script src="chat.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('scroll', () => document.getElementById('scrollTop').classList.toggle('visible', window.scrollY > 400));
+  document.getElementById('scrollTop').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  document.getElementById('hamburger').addEventListener('click', () => document.getElementById('mobileMenu').classList.add('open'));
+  document.getElementById('mobileClose').addEventListener('click', () => document.getElementById('mobileMenu').classList.remove('open'));
+  KipProducts.observeFadeIn();
+});
+
+function submitForm() {
+  const firstName = document.getElementById('firstName').value.trim();
+  const lastName  = do

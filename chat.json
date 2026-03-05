@@ -1,0 +1,100 @@
+{
+  "agent": {
+    "name": "Kip Assistant",
+    "avatar": "🤖",
+    "status": "Online now",
+    "welcomeMessage": "Hello 👋 I'm Kip!\nHow can I help you today?",
+    "typingDelay": 900
+  },
+
+  "quickReplies": [
+    {
+      "label": "🍳 Find Kitchen Gadgets",
+      "keywords": ["kitchen gadgets", "cooking tools"],
+      "response": "I'd love to help! Check out our Kitchen Gadgets section — we have choppers, air fryers, instant pots and more. Head to our <a href='kitchen.html' style='color:var(--blue);font-weight:600'>Kitchen page</a> for the full collection!"
+    },
+    {
+      "label": "🏠 Browse Smart Home Devices",
+      "keywords": ["smart home", "smart devices"],
+      "response": "Great choice! Our Smart Home section features top-rated devices including smart displays, robot vacuums, LED strips and more. Visit the <a href='smart-home.html' style='color:var(--blue);font-weight:600'>Smart Home page</a> to explore!"
+    },
+    {
+      "label": "🔥 Trending Products",
+      "keywords": ["trending", "popular", "hot"],
+      "response": "Here are our hottest picks right now: <strong>Smart Air Fryer XL</strong>, <strong>Ninja Blender Pro</strong>, and the <strong>Robot Vacuum S8</strong>. All available with fast Amazon delivery!"
+    },
+    {
+      "label": "⭐ Product Recommendations",
+      "keywords": ["recommend", "suggest", "best"],
+      "response": "I'd love to recommend the perfect gadget for you! Are you looking for something for the <a href='kitchen.html' style='color:var(--blue);font-weight:600'>kitchen</a> or your <a href='smart-home.html' style='color:var(--blue);font-weight:600'>home</a>? We also have amazing <a href='deals.html' style='color:var(--blue);font-weight:600'>deals</a> going on right now!"
+    }
+  ],
+
+  "autoReplies": [
+    {
+      "keywords": ["kitchen", "cook", "chop", "slice", "fry", "bake", "boil"],
+      "response": "Great! Head to our <a href='kitchen.html' style='color:var(--blue);font-weight:600'>Kitchen Gadgets page</a> to discover amazing tools that'll transform your cooking! 🍳"
+    },
+    {
+      "keywords": ["smart home", "alexa", "wifi", "automation", "robot", "vacuum", "thermostat", "lights"],
+      "response": "Smart home is our specialty! Check out the <a href='smart-home.html' style='color:var(--blue);font-weight:600'>Smart Home page</a> for our top-rated devices. 🏠"
+    },
+    {
+      "keywords": ["deal", "discount", "sale", "cheap", "offer", "price", "save", "off"],
+      "response": "Looking for savings? Visit our <a href='deals.html' style='color:var(--blue);font-weight:600'>Best Deals page</a> — we update it daily with flash discounts! 🔥"
+    },
+    {
+      "keywords": ["blog", "review", "article", "guide", "read", "compare"],
+      "response": "We have in-depth reviews and guides on our <a href='blog.html' style='color:var(--blue);font-weight:600'>Blog</a>. Perfect for research before buying! 📝"
+    },
+    {
+      "keywords": ["hello", "hi", "hey", "hiya", "howdy", "good morning", "good evening"],
+      "response": "Hey there! 👋 Welcome to Kip Smart Living! How can I help you find the perfect gadget today?"
+    },
+    {
+      "keywords": ["price", "cost", "how much", "budget", "affordable", "expensive"],
+      "response": "We have gadgets for every budget — from under $15 to premium picks. Check our <a href='deals.html' style='color:var(--blue);font-weight:600'>Deals page</a> for the biggest savings right now! 💰"
+    },
+    {
+      "keywords": ["shipping", "delivery", "prime", "fast", "when"],
+      "response": "Most products are Amazon Prime eligible — that means fast, FREE delivery in 1-2 days! 🚀 Click any product to check shipping details on Amazon."
+    },
+    {
+      "keywords": ["return", "refund", "exchange", "warranty"],
+      "response": "All products link directly to Amazon, which has a great return policy — most items can be returned within 30 days hassle-free. Check each product page for specific details."
+    },
+    {
+      "keywords": ["gift", "present", "birthday", "christmas", "holiday"],
+      "response": "Looking for a gift? 🎁 Our top gift ideas are on the <a href='kitchen.html' style='color:var(--blue);font-weight:600'>Kitchen page</a> and <a href='smart-home.html' style='color:var(--blue);font-weight:600'>Smart Home page</a>. All ship with Amazon Prime!"
+    },
+    {
+      "keywords": ["affiliate", "commission", "paid", "sponsored"],
+      "response": "Great question! Yes, we earn a small commission on Amazon purchases at no extra cost to you. This helps us keep the site running and all our reviews free. 💙"
+    },
+    {
+      "keywords": ["contact", "email", "support", "help", "human"],
+      "response": "Need to speak to a person? You can reach our team at <strong>hello@kipsmartliving.com</strong> — we typically respond within 24 hours! 📧"
+    },
+    {
+      "keywords": ["about", "who are you", "who is kip", "company"],
+      "response": "Kip Smart Living Enterprise is a product discovery platform helping people find the best kitchen gadgets and smart home devices. Our team tests and reviews hundreds of products each month! ⚡"
+    }
+  ],
+
+  "fallbackResponses": [
+    "Thanks for your message! 😊 I'm here to help you find the perfect gadget. Try asking about kitchen tools, smart home devices, or current deals!",
+    "Hmm, I'm not sure about that one! Try browsing our <a href='kitchen.html' style='color:var(--blue);font-weight:600'>Kitchen</a> or <a href='smart-home.html' style='color:var(--blue);font-weight:600'>Smart Home</a> pages — you might find exactly what you're looking for!",
+    "I may not have that answer right now, but our <a href='blog.html' style='color:var(--blue);font-weight:600'>Blog</a> has tons of buying guides and reviews that might help! 📝"
+  ],
+
+  "proactiveMessages": [
+    {
+      "delaySeconds": 8,
+      "message": "👋 Looking for something specific? I can help you find the perfect gadget!"
+    },
+    {
+      "delaySeconds": 30,
+      "message": "🔥 We have flash deals running today — want me to show you the best ones?"
+    }
+  ]
+}

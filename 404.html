@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found — Kip Smart Living</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <style>
+    .error-page {
+      min-height: 100vh;
+      background: var(--dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .error-number {
+      font-family: var(--font-display);
+      font-size: clamp(8rem, 20vw, 16rem);
+      font-weight: 800;
+      line-height: 1;
+      background: linear-gradient(135deg, var(--blue), var(--teal));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      opacity: 0.15;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      user-select: none;
+    }
+    .error-content {
+      position: relative;
+      z-index: 2;
+      padding: 24px;
+    }
+    .error-icon { font-size: 4rem; margin-bottom: 20px; }
+    .error-title {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      color: white;
+      margin-bottom: 16px;
+    }
+    .error-sub {
+      color: rgba(255,255,255,0.55);
+      font-size: 1rem;
+      max-width: 420px;
+      margin: 0 auto 36px;
+      line-height: 1.75;
+    }
+    .error-links {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+    .quick-links {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .quick-link {
+      padding: 8px 18px;
+      border-radius: 50px;
+      border: 1px solid rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.55);
+      font-size: 0.85rem;
+      transition: all 0.25s;
+      text-decoration: none;
+    }
+    .quick-link:hover {
+      border-color: var(--blue);
+      color: white;
+      background: rgba(47,128,237,0.1);
+    }
+    #countdown { color: rgba(255,255,255,0.35); font-size: 0.82rem; margin-top: 28px; }
+  </style>
+</head>
+<body>
+<div class="error-page">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="error-number">404</div>
+
+  <div class="error-content">
+    <div class="error-icon">🔍</div>
+    <h1 class="error-title">This Page Doesn't Exist</h1>
+    <p class="error-sub">
+      The gadget you were looking for might have moved, been renamed, or never existed. Let's get you back on track.
+    </p>
+
+    <div class="error-links">
+      <a href="index.html" class="btn btn-primary">🏠 Back to Homepage</a>
+      <a href="kitchen.html" class="btn btn-secondary">🍳 Browse Kitchen</a>
+    </div>
+
+    <div class="quick-links">
+      <a href="smart-home.html" class="quick-link">Smart Home</a>
+      <a href="deals.html" class="quick-link">Today's Deals 🔥</a>
+      <a href="blog.html" class="quick-link">Blog</a>
+      <a href="contact.html" class="quick-link">Contact Us</a>
+    </div>
+
+    <p id="countdown">Redirecting to homepage in <span id="timer">10</span>s...</p>
+  </div>
+</div>
+
+<script>
+  let t = 10;
+  const el = document.getElementById('timer');
+  const interval = setInterval(() => {
+    t--;
+    el.textContent = t;
+    if (t <= 0) { clearInterval(interval); window.location.href = 'index.html'; }
+  }, 1000);
+</script>
+</body>
+</html>

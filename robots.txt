@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Block data folder from indexing
+Disallow: /data/
+
+# Sitemap location
+Sitemap: https://mackaysscott.github.io/kip-smart-living/sitemap.xml

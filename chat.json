@@ -14,9 +14,9 @@
       "response": "I'd love to help! Check out our Kitchen Gadgets section — we have choppers, air fryers, instant pots and more. Head to our <a href='kitchen.html' style='color:var(--blue);font-weight:600'>Kitchen page</a> for the full collection!"
     },
     {
-      "label": "🏠 Browse Smart Home Devices",
-      "keywords": ["smart home", "smart devices"],
-      "response": "Great choice! Our Smart Home section features top-rated devices including smart displays, robot vacuums, LED strips and more. Visit the <a href='smart-home.html' style='color:var(--blue);font-weight:600'>Smart Home page</a> to explore!"
+      "label": "🏠 Browse Smart Tech Gadgets",
+      "keywords": ["smart tech gadgets", "smart devices"],
+      "response": "Great choice! Our Smart Tech Gadgets section features top-rated devices including smart displays, robot vacuums, LED strips and more. Visit the <a href='smart-home.html' style='color:var(--blue);font-weight:600'>Smart Tech Gadgets page</a> to explore!"
     },
     {
       "label": "🔥 Trending Products",
@@ -36,8 +36,8 @@
       "response": "Great! Head to our <a href='kitchen.html' style='color:var(--blue);font-weight:600'>Kitchen Gadgets page</a> to discover amazing tools that'll transform your cooking! 🍳"
     },
     {
-      "keywords": ["smart home", "alexa", "wifi", "automation", "robot", "vacuum", "thermostat", "lights"],
-      "response": "Smart home is our specialty! Check out the <a href='smart-home.html' style='color:var(--blue);font-weight:600'>Smart Home page</a> for our top-rated devices. 🏠"
+      "keywords": ["smart tech gadgets", "alexa", "wifi", "automation", "robot", "vacuum", "thermostat", "lights"],
+      "response": "Smart home is our specialty! Check out the <a href='smart-home.html' style='color:var(--blue);font-weight:600'>Smart Tech Gadgets page</a> for our top-rated devices. 🏠"
     },
     {
       "keywords": ["deal", "discount", "sale", "cheap", "offer", "price", "save", "off"],
@@ -65,7 +65,7 @@
     },
     {
       "keywords": ["gift", "present", "birthday", "christmas", "holiday"],
-      "response": "Looking for a gift? 🎁 Our top gift ideas are on the <a href='kitchen.html' style='color:var(--blue);font-weight:600'>Kitchen page</a> and <a href='smart-home.html' style='color:var(--blue);font-weight:600'>Smart Home page</a>. All ship with Amazon Prime!"
+      "response": "Looking for a gift? 🎁 Our top gift ideas are on the <a href='kitchen.html' style='color:var(--blue);font-weight:600'>Kitchen page</a> and <a href='smart-home.html' style='color:var(--blue);font-weight:600'>Smart Tech Gadgets page</a>. All ship with Amazon Prime!"
     },
     {
       "keywords": ["affiliate", "commission", "paid", "sponsored"],
@@ -77,13 +77,13 @@
     },
     {
       "keywords": ["about", "who are you", "who is kip", "company"],
-      "response": "Kip Smart Living Enterprise is a product discovery platform helping people find the best kitchen gadgets and smart home devices. Our team tests and reviews hundreds of products each month! ⚡"
+      "response": "Kip Smart Living Enterprise is a product discovery platform helping people find the best kitchen gadgets and smart tech gadgets devices. Our team tests and reviews hundreds of products each month! ⚡"
     }
   ],
 
   "fallbackResponses": [
-    "Thanks for your message! 😊 I'm here to help you find the perfect gadget. Try asking about kitchen tools, smart home devices, or current deals!",
-    "Hmm, I'm not sure about that one! Try browsing our <a href='kitchen.html' style='color:var(--blue);font-weight:600'>Kitchen</a> or <a href='smart-home.html' style='color:var(--blue);font-weight:600'>Smart Home</a> pages — you might find exactly what you're looking for!",
+    "Thanks for your message! 😊 I'm here to help you find the perfect gadget. Try asking about kitchen tools, smart tech gadgets devices, or current deals!",
+    "Hmm, I'm not sure about that one! Try browsing our <a href='kitchen.html' style='color:var(--blue);font-weight:600'>Kitchen</a> or <a href='smart-home.html' style='color:var(--blue);font-weight:600'>Smart Tech Gadgets</a> pages — you might find exactly what you're looking for!",
     "I may not have that answer right now, but our <a href='blog.html' style='color:var(--blue);font-weight:600'>Blog</a> has tons of buying guides and reviews that might help! 📝"
   ],
 

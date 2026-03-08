@@ -1254,11 +1254,11 @@ h1, h2, h3, h4, h5 { font-family: var(--font-display); font-weight: 700; line-he
   transition: var(--transition);
   text-decoration: none;
 }
-.social-btn:hover {
-  background: rgba(47,128,237,0.2);
-  border-color: rgba(47,128,237,0.4);
-  color: var(--white);
-}
+.social-btn:hover { background: rgba(47,128,237,0.2); border-color: rgba(47,128,237,0.4); color: var(--white); }
+.social-btn.facebook:hover  { background: #1877F2; border-color: #1877F2; }
+.social-btn.instagram:hover { background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); border-color: #dc2743; }
+.social-btn.pinterest:hover { background: #E60023; border-color: #E60023; }
+.social-btn.youtube:hover   { background: #FF0000; border-color: #FF0000; }
 
 .footer-col-title {
   font-family: var(--font-display);

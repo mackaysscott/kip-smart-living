@@ -529,7 +529,8 @@ h1, h2, h3, h4, h5 { font-family: var(--font-display); font-weight: 700; line-he
   transition: opacity 0.4s ease;
 }
 
-.product-card:hover .product-img { opacity: 0; }
+.product-card:hover .product-img { opacity: 1; }
+.product-card.has-video:hover .product-img { opacity: 0; }
 .product-card:hover .product-video { opacity: 1; }
 
 .product-badge {

@@ -99,7 +99,7 @@ const KipProducts = {
     }
 
     return `
-      <div class="product-card fade-in" data-id="${product.id}">
+      <div class="product-card fade-in ${product.video ? 'has-video' : ''}" data-id="${product.id}">
         <div class="product-media">
           <img class="product-img" src="${product.image}" alt="${product.name}" loading="lazy">
           ${product.video ? `<video class="product-video" src="${product.video}" muted loop playsinline></video>` : ''}

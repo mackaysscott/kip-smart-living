@@ -319,20 +319,36 @@
       "badge": "Trending",
       "deal": true,
       "store": "Amazon"
+    },
+    {
+      "id": 21,
+      "name": "KitchenClouds Anti Fatigue Kitchen Mat 17.3\"x28\"",
+      "category": "kitchen",
+      "price": "$14.99",
+      "originalPrice": "$21.99",
+      "rating": 4.4,
+      "reviews": 21527,
+      "image": "https://m.media-amazon.com/images/I/71nVT-klNdL._AC_SL1500_.jpg",
+      "video": "",
+      "link": "https://amzn.to/3PpbsYg",
+      "description": "Cushioned anti-fatigue mat that makes standing at the sink or counter genuinely comfortable. Water resistant, easy to wipe clean, and stays put \u2014 great for long cooking sessions.",
+      "badge": "Best Seller",
+      "deal": true,
+      "store": "Amazon"
     }
   ],
   "blogPosts": [
     {
       "id": 1,
-      "title": "10 Best Kitchen Gadgets of 2025 That Will Change How You Cook",
-      "slug": "best-kitchen-gadgets-2025",
-      "excerpt": "Discover the top kitchen gadgets that are transforming home cooking in 2025. From AI-powered appliances to space-saving tools, we cover it all.",
+      "title": "10 Best kitchen essentials of 2025 That Will Change How You Cook",
+      "slug": "best-kitchen-devices-2025",
+      "excerpt": "Discover the top kitchen essentials that are transforming home cooking in 2025. From AI-powered appliances to space-saving tools, we cover it all.",
       "category": "Kitchen",
       "readTime": "8 min read",
       "date": "March 1, 2025",
       "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",
       "tags": [
-        "kitchen gadgets",
+        "kitchen essentials",
         "best amazon kitchen tools",
         "cooking"
       ]
@@ -341,28 +357,28 @@
       "id": 2,
       "title": "Smart Devices You Need in 2025: Complete Buyer's Guide",
       "slug": "smart-home-devices-2025",
-      "excerpt": "Build the ultimate smart tech gadgets with our expert picks. We tested 50+ devices to bring you the best smart tech gadgets gadgets worth your money.",
+      "excerpt": "Build the ultimate smart tech essentials with our expert picks. We tested 50+ devices to bring you the best smart tech essentials devices worth your money.",
       "category": "Smart Devices",
       "readTime": "12 min read",
       "date": "February 22, 2025",
       "image": "https://images.unsplash.com/photo-1543512214-318c7553f230?w=600&q=80",
       "tags": [
-        "smart tech gadgets",
+        "smart tech picks",
         "smart devices",
         "home automation"
       ]
     },
     {
       "id": 3,
-      "title": "Time-Saving Kitchen Gadgets That Actually Work",
-      "slug": "time-saving-kitchen-gadgets",
+      "title": "Time-Saving kitchen essentials That Actually Work",
+      "slug": "time-saving-kitchen-devices",
       "excerpt": "We tested dozens of time-saving kitchen tools. Here are the ones that genuinely cut your prep time in half and are worth every penny.",
       "category": "Kitchen",
       "readTime": "6 min read",
       "date": "February 15, 2025",
       "image": "https://images.unsplash.com/photo-1574781330855-d0db8cc6a79c?w=600&q=80",
       "tags": [
-        "time-saving kitchen gadgets",
+        "time-saving kitchen essentials",
         "kitchen tools",
         "meal prep"
       ]

@@ -9,13 +9,13 @@
 
   "quickReplies": [
     {
-      "label": "🍳 Find Kitchen Gadgets",
-      "keywords": ["kitchen gadgets", "cooking tools"],
-      "response": "I'd love to help! Check out our Kitchen Gadgets section — we have choppers, air fryers, instant pots and more. Head to our <a href='kitchen.html' style='color:var(--blue);font-weight:600'>Kitchen page</a> for the full collection!"
+      "label": "🍳 Find kitchen essentials",
+      "keywords": ["kitchen essentials", "cooking tools"],
+      "response": "I'd love to help! Check out our kitchen essentials section — we have choppers, air fryers, instant pots and more. Head to our <a href='kitchen.html' style='color:var(--blue);font-weight:600'>Kitchen page</a> for the full collection!"
     },
     {
       "label": "🏠 Browse Smart Devices",
-      "keywords": ["smart tech gadgets", "smart devices"],
+      "keywords": ["smart tech picks", "smart devices"],
       "response": "Great choice! Our Smart Devices section features top-rated devices including smart displays, robot vacuums, LED strips and more. Visit the <a href='smart-home.html' style='color:var(--blue);font-weight:600'>Smart Devices page</a> to explore!"
     },
     {
@@ -26,17 +26,17 @@
     {
       "label": "⭐ Product Recommendations",
       "keywords": ["recommend", "suggest", "best"],
-      "response": "I'd love to recommend the perfect gadget for you! Are you looking for something for the <a href='kitchen.html' style='color:var(--blue);font-weight:600'>kitchen</a> or your <a href='smart-home.html' style='color:var(--blue);font-weight:600'>home</a>? We also have amazing <a href='deals.html' style='color:var(--blue);font-weight:600'>deals</a> going on right now!"
+      "response": "I'd love to recommend the perfect device for you! Are you looking for something for the <a href='kitchen.html' style='color:var(--blue);font-weight:600'>kitchen</a> or your <a href='smart-home.html' style='color:var(--blue);font-weight:600'>home</a>? We also have amazing <a href='deals.html' style='color:var(--blue);font-weight:600'>deals</a> going on right now!"
     }
   ],
 
   "autoReplies": [
     {
       "keywords": ["kitchen", "cook", "chop", "slice", "fry", "bake", "boil"],
-      "response": "Great! Head to our <a href='kitchen.html' style='color:var(--blue);font-weight:600'>Kitchen Gadgets page</a> to discover amazing tools that'll transform your cooking! 🍳"
+      "response": "Great! Head to our <a href='kitchen.html' style='color:var(--blue);font-weight:600'>kitchen essentials page</a> to discover amazing tools that'll transform your cooking! 🍳"
     },
     {
-      "keywords": ["smart tech gadgets", "alexa", "wifi", "automation", "robot", "vacuum", "thermostat", "lights"],
+      "keywords": ["smart tech picks", "alexa", "wifi", "automation", "robot", "vacuum", "thermostat", "lights"],
       "response": "Smart home is our specialty! Check out the <a href='smart-home.html' style='color:var(--blue);font-weight:600'>Smart Devices page</a> for our top-rated devices. 🏠"
     },
     {
@@ -49,11 +49,11 @@
     },
     {
       "keywords": ["hello", "hi", "hey", "hiya", "howdy", "good morning", "good evening"],
-      "response": "Hey there! 👋 Welcome to Kip Smart Living! How can I help you find the perfect gadget today?"
+      "response": "Hey there! 👋 Welcome to Kip Smart Living! How can I help you find the perfect device today?"
     },
     {
       "keywords": ["price", "cost", "how much", "budget", "affordable", "expensive"],
-      "response": "We have gadgets for every budget — from under $15 to premium picks. Check our <a href='deals.html' style='color:var(--blue);font-weight:600'>Deals page</a> for the biggest savings right now! 💰"
+      "response": "We have essentials for every budget — from under $15 to premium picks. Check our <a href='deals.html' style='color:var(--blue);font-weight:600'>Deals page</a> for the biggest savings right now! 💰"
     },
     {
       "keywords": ["shipping", "delivery", "prime", "fast", "when"],
@@ -77,12 +77,12 @@
     },
     {
       "keywords": ["about", "who are you", "who is kip", "company"],
-      "response": "Kip Smart Living Enterprise is a product discovery platform helping people find the best kitchen gadgets and smart tech gadgets devices. Our team tests and reviews hundreds of products each month! ⚡"
+      "response": "Kip Smart Living Enterprise is a product discovery platform helping people find the best kitchen essentials and smart tech essentials devices. Our team tests and reviews hundreds of products each month! ⚡"
     }
   ],
 
   "fallbackResponses": [
-    "Thanks for your message! 😊 I'm here to help you find the perfect gadget. Try asking about kitchen tools, smart tech gadgets devices, or current deals!",
+    "Thanks for your message! 😊 I'm here to help you find the perfect device. Try asking about kitchen tools, smart tech essentials devices, or current deals!",
     "Hmm, I'm not sure about that one! Try browsing our <a href='kitchen.html' style='color:var(--blue);font-weight:600'>Kitchen</a> or <a href='smart-home.html' style='color:var(--blue);font-weight:600'>Smart Devices</a> pages — you might find exactly what you're looking for!",
     "I may not have that answer right now, but our <a href='blog.html' style='color:var(--blue);font-weight:600'>Blog</a> has tons of buying guides and reviews that might help! 📝"
   ],
@@ -90,7 +90,7 @@
   "proactiveMessages": [
     {
       "delaySeconds": 8,
-      "message": "👋 Looking for something specific? I can help you find the perfect gadget!"
+      "message": "👋 Looking for something specific? I can help you find the perfect device!"
     },
     {
       "delaySeconds": 30,

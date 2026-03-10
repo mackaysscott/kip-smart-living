@@ -335,6 +335,22 @@
       "badge": "Best Seller",
       "deal": true,
       "store": "Amazon"
+    },
+    {
+      "id": 22,
+      "name": "Apple Watch Series 11 GPS 46mm Smartwatch",
+      "category": "smart-home",
+      "price": "$284.05",
+      "originalPrice": "",
+      "rating": 4.8,
+      "reviews": 3614,
+      "image": "https://m.media-amazon.com/images/I/6129OfG4gfL._AC_SL1500_.jpg",
+      "video": "",
+      "link": "https://amzn.to/4b06MRb",
+      "description": "The #1 Best Seller in Smartwatches. Features Sleep Score, ECG, fitness tracking, always-on display, and seamless iPhone integration. Charges in under 30 minutes \u2014 ideal for health-focused users.",
+      "badge": "#1 Best Seller",
+      "deal": false,
+      "store": "Amazon"
     }
   ],
   "blogPosts": [

@@ -351,6 +351,38 @@
       "badge": "#1 Best Seller",
       "deal": false,
       "store": "Amazon"
+    },
+    {
+      "id": 23,
+      "name": "ecobee Smart Sensor 2 Pack",
+      "category": "smart-home",
+      "price": "$99.99",
+      "originalPrice": "",
+      "rating": 4.5,
+      "reviews": 8537,
+      "image": "https://m.media-amazon.com/images/I/41o28svwQBL._AC_SL1000_.jpg",
+      "video": "",
+      "link": "https://amzn.to/4rr9T9M",
+      "description": "Monitor temperature and occupancy in every room for real comfort and energy savings. Compatible with all ecobee thermostats \u2014 easy setup and works across long distances.",
+      "badge": "Amazon's Choice",
+      "deal": false,
+      "store": "Amazon"
+    },
+    {
+      "id": 24,
+      "name": "WYZE Cam Pan v3 Indoor/Outdoor Security Camera",
+      "category": "smart-home",
+      "price": "$35.49",
+      "originalPrice": "$39.98",
+      "rating": 4.3,
+      "reviews": 31013,
+      "image": "https://m.media-amazon.com/images/I/61zQmZVmeKL._AC_SL1500_.jpg",
+      "video": "",
+      "link": "https://amzn.to/4bhVOVU",
+      "description": "IP65-rated 1080p pan/tilt/zoom camera with color night vision and 2-way audio. Works indoors and outdoors, compatible with Alexa & Google Assistant.",
+      "badge": "Amazon's Choice",
+      "deal": true,
+      "store": "Amazon"
     }
   ],
   "blogPosts": [

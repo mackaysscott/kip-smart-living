@@ -383,6 +383,22 @@
       "badge": "Amazon's Choice",
       "deal": true,
       "store": "Amazon"
+    },
+    {
+      "id": 25,
+      "name": "DJI Osmo Mobile 7P Gimbal Stabilizer",
+      "category": "smart-home",
+      "price": "$99.00",
+      "originalPrice": "$129.00",
+      "rating": 4.5,
+      "reviews": 5381,
+      "image": "https://m.media-amazon.com/images/I/61iywJZXGNL._AC_SL1500_.jpg",
+      "video": "",
+      "link": "https://amzn.to/4s2GjbB",
+      "description": "3-axis gimbal stabilizer with native tracking in any camera app, built-in extension rod, tripod, and phone charging. Up to 10 hours of use \u2014 perfect for smooth YouTube and social content.",
+      "badge": "Sale",
+      "deal": true,
+      "store": "Amazon"
     }
   ],
   "blogPosts": [
